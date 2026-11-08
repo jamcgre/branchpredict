@@ -1,0 +1,22 @@
+BT9_SPA_TRACE_FORMAT
+bt9_minor_version: 0
+total_instruction_count: 14
+branch_instruction_count: 4
+
+BT9_NODES
+NODE    0                    0                    -                0    0
+NODE    1              0x1000                    -             0x1a    4    class:  JMP+DIR+CND  behavior:  DYN+DIR
+NODE    2              0x2000                    -             0xea    4    class:  JMP+DIR+UCD  behavior:   AT+DIR
+
+BT9_EDGES
+EDGE      0      0      1        N                    0                    -        4   traverse_cnt:        1
+EDGE      1      1      1        T               0x1000                    -        3   traverse_cnt:        1
+EDGE      3      2      1        T               0x1000                    -        2   traverse_cnt:        1
+EDGE      2      1      2        N               0x1004                    -        1   traverse_cnt:        1
+
+BT9_EDGE_SEQUENCE
+0
+1
+3
+2
+EOF
